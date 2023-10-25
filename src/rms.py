@@ -20,11 +20,6 @@ def abrir_rms():
     time.sleep(4)
 
 def abrir_programa():
-    mercadoria_check = pyautogui.locateOnScreen("./src/assets/mercadorias.png", confidence=0.9, grayscale=True)
-    if mercadoria_check is not None:
-        x = mercadoria_check.left + 20
-        y = mercadoria_check.top + 10
-        pyautogui.doubleClick(x, y)
         print("deu bom!")
     
 abrir_rms()
