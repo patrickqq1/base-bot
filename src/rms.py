@@ -18,6 +18,7 @@ def abrir_rms():
     pyautogui.write(senha)
     pyautogui.press('enter')
     time.sleep(4)
+    imagem1 = pyautogui.locateOnScreen('src/assets/recebimento.png', confidence=0.9, grayscale=True)
 
 def abrir_programa():
         print("deu bom!")
